@@ -1,0 +1,215 @@
+    1  whereis jenkins
+    2  sudo apt-get install openjdk-8-jdk
+    3  echo "JAVA_HOME=$(which java)"
+    4  echo "JAVA_HOME=$(which java)" | sudo tee -a /etc/environment
+    5  source /etc/environment
+    6  echo $JAVA_HOME
+    7  wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
+    8  sudo apt-get update
+    9  echo deb https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list
+   10  sudo apt-get update
+   11  sudo apt-get install -y jenkins
+   12  sudo apt-get update
+   13  echo deb https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list
+   14  sudo apt-get -y update
+   15  sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 6494C6D6997C215E
+   16  sudo apt-get -y update
+   17  sudo vim /etc/apt/sources.list.d/jenkins.list
+   18  echo deb https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list
+   19  sudo apt-get -y update
+   20  sudo vim /etc/apt/sources.list.d/jenkins.list
+   21  echo deb https://pkg.jenkins.io/debian-stable  | sudo tee /etc/apt/sources.list.d/jenkins.list
+   22  sudo apt-get -y update
+   23  wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
+   24  echo deb https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list
+   25  sudo apt-get update
+   26  sudo apt-get updatee
+   27  sudo apt-get -y update
+   28  java --version
+   29  java -version
+   30  sudo wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+   31  sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+   32  sudo vim /etc/apt/sources.list.d/jenkins.list 
+   33  sudo apt-get -y update
+   34  sudo apt-get -y jenkins
+   35  sudo apt-get install -y jenkins
+   36  sudo systemctl start jenkins
+   37  sudo systemctl status jenkins
+   38  sudo ufw allow 8080
+   39  sudo ufw status
+   40  vim /var/lib/jenkins/secrets/initialAdminPassword
+   41  exit
+   42  vim /var/lib/jenkins/secrets/initialAdminPassword
+   43  cat /var/lib/jenkins/secrets/initialAdminPassword
+   44  sudo su
+   45  sudo service jenkins restart
+   46  sudo systemctl status jenkins
+   47  sudo su
+   48  sudo systemctl restart jenkins
+   49  exit
+   50  docker ps
+   51  docker image ls
+   52  sudo apt-get install -y htop
+   53  docker ps
+   54  sudo apt-get install -y htop
+   55  sudo add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   56     $(lsb_release -cs) \
+   57     stable"
+   58  sudo add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   59     $(lsb_release -cs) \
+   60     stable"
+   61  sudo apt-get install docker-ce docker-ce-cli containerd.io
+   62  sudo apt-get install docker-ce=5:18.09.3~3-0~ubuntu-xenial docker-ce-cli=5:18.09.3~3-0~ubuntu-xenial
+   63  docker ps
+   64  sudo usermod -aG docker ubuntu
+   65  cd /var/run
+   66  sudo chown ubuntu:docker docker.sock
+   67  docker ps
+   68  sudo netstat -tulnp | grep ":2345"
+   69  sudo netstat -tulnp | grep docker
+   70  sudo netstat -tulnp 
+   71  ps -aef | grep docker
+   72  sudo su
+   73  ps -aef
+   74  ps -aef | grep docker
+   75  ps -aef | grep jenkins
+   76  docker ps
+   77  whereis ansible
+   78  python --version
+   79  python3 --version
+   80  python -version
+   81  python3 -version
+   82  sudo apt-get install -y python
+   83  sudo apt-get install -y python --fix-missing
+   84  whereis python
+   85  python --version
+   86  sudo update-alternatives --install /usr/bin/python python /usr/bin/python3
+   87  sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
+   88  python --version
+   89  sudo easy_install pip
+   90  sudo pip install ansible
+   91  sudo install pip3
+   92  sudo apt-get -y install pip3
+   93  sudo apt-get -y install pip
+   94  sudo apt-get install -y pip
+   95  sudo apt-get -y update
+   96  sudo apt-get install -y pip
+   97  sudo apt install software-properties-common
+   98  sudo apt-add-repository --yes --update ppa:ansible/ansible
+   99  sudo apt install ansible
+  100  python --version
+  101  ansible --version
+  102  sudo vim /etc/ansible/hosts 
+  103  ls -la
+  104  exit
+  105  docker ps
+  106  ls -la
+  107  cd ansible_pr/
+  108  ls -la
+  109  cd prac/
+  110  ls -la
+  111  cd templates/
+  112  ls -la
+  113  samp.j2
+  114  vim samp.j2
+  115  cd ..
+  116  ls
+  117  cd tasks/
+  118  ls -la
+  119  vim main.yml 
+  120  ansible-playbook main.yml 
+  121  vim main.yml 
+  122  ansible-playbook -i /etc/ansible/hosts main.yml 
+  123  vim main.yml 
+  124  ansible-playbook -i /etc/ansible/hosts main.yml 
+  125  vim main.yml 
+  126  ansible-playbook -i /etc/ansible/hosts main.yml 
+  127  vim main.yml 
+  128  ansible-playbook -i /etc/ansible/hosts main.yml 
+  129  vim main.yml 
+  130  ansible-playbook -i /etc/ansible/hosts main.yml -vvv
+  131  vim main.yml 
+  132  ls -tlhr
+  133  echo $dae
+  134  echo $date
+  135  echo $DATE
+  136  date
+  137  echo `$date`
+  138  echo `date`
+  139  touch `date`.txt
+  140  ls -tlhr
+  141  rm Fri Apr UTC 30
+  142  ls -l
+  143  rm 15\:55\:27 
+  144  rm 2021.txt 
+  145  touch `date+ YYYY`.txt
+  146  cat this > op.txt
+  147  cat > op.txt
+  148  ls -ltr
+  149  cat op.txt 
+  150  cat > op.txt
+  151  cat op.txt 
+  152  history
+  153  ls -la
+  154  cd /etc/ansible/
+  155  l s-la
+  156  ls -la
+  157  cd roles/
+  158  ls -la
+  159  cd
+  160  cd ansible_pr/
+  161  ls -la
+  162  cd prac/
+  163  ls -la
+  164  cd files/
+  165  ls -la
+  166  cd ../handlers/
+  167  ls -la
+  168  cd ..
+  169  cd .
+  170  cd ..
+  171  ls -la
+  172  cd ..
+  173  ls -la
+  174  cat op.txt 
+  175  mv op.txt ansible_pr/
+  176  cd ansible_pr/
+  177  ls -la
+  178  mv op.txt prac/
+  179  ls -la
+  180  git init
+  181  git remote add origin https://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@github.com/ashishkarnad/ansibleprac.git
+  182  git pull
+  183  git pull origin master
+  184  git push
+  185  git push --set-upstream origin master
+  186  git branch
+  187  git checkout dev
+  188  git status
+  189  git add . & git commit -m " ansible files"
+  190  ls -la
+  191  cd prac/
+  192  ls -la
+  193  cd ..
+  194  l s-la
+  195  ls -la
+  196  git add .
+  197  git status
+  198  git commit -m " ansible files"
+  199  git push
+  200  git push --set-upstream origin master
+  201  git log
+  202  git branch
+  203  ls -la
+  204  git log
+  205  git status
+  206  git brnach
+  207  git branch
+  208  git pull
+  209  ls -la
+  210  cd
+  211  ls
+  212  cd
+  213  history 
+  214  sudo su
+  215  history > ansible_pr/historydemoserver.txt
