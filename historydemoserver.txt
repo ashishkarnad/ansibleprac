@@ -178,7 +178,7 @@
   178  mv op.txt prac/
   179  ls -la
   180  git init
-  181  git remote add origin https://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@github.com/ashishkarnad/ansibleprac.git
+  181  
   182  git pull
   183  git pull origin master
   184  git push
