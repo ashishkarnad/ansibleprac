@@ -1,0 +1,6 @@
+---
+# tasks file for prac
+- name: copy files from hsot to destn
+  template: 
+    src: templates/sampj2
+    dest: /home/ubuntu/{{ ansible.hostname }}.txt
